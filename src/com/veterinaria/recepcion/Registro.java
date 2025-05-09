@@ -23,7 +23,6 @@ public class Registro {
             sc.nextLine();
             System.out.println("Ingrese el historial de su perro: ");
             String historial = sc.nextLine();
-            sc.nextLine();
             perro.setNombre(nombre);
             perro.setEdad(edad);
             perro.setPeso(peso);
@@ -36,7 +35,6 @@ public class Registro {
 
         } while (ContinuarRegistro.equals("si"));
 
-        perro.addPerro(perro.nombre, perro.getEdad(), perro.getPeso(), perro.getRaza(), perro.getHistorialMedico());
         perro.mostrarRegistro();
 
     }
